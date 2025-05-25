@@ -1,4 +1,10 @@
+tareas = [
+    {"nombre": "Estudiar Python", "prioridad": "Alta"},
+    {"nombre": "Hacer ejercicio", "prioridad": "Media"},
+    {"nombre": "Leer un libro", "prioridad": "Baja"}
+]
 
+prioridades = ["Alta", "Media", "Baja"]
 while True:
     print("======= GESTOR DE TAREAS =======")
     print("1. Agregar tarea")
@@ -7,16 +13,11 @@ while True:
     print("4. Clasificar tarea")
     print("5. Salir")
     print("===============================")
-
     opcion = input("Opción: ")
-
-    tareas = ["Estudiar Python", "Hacer ejercicio", "Leer un libro"]
-    prioridades = ["Alta", "Media", "Baja"]
 
     if opcion == "1":
         tarea = input("Ingrese la tarea a agregar:")
         prioridad = input("Ingrese la prioridad (Alta, Media, Baja): ")
-    
         if prioridad in prioridades:
             tareas.append(tarea)
             print("Tarea agregada con éxito")
