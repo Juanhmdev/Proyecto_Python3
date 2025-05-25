@@ -1,7 +1,7 @@
 tareas = [
     {"nombre": "Estudiar Python", "prioridad": "Alta"},
     {"nombre": "Hacer ejercicio", "prioridad": "Media"},
-    {"nombre": "Leer un libro", "prioridad": "Baja"}
+    {"nombre": "Leer un libro", "prioridad": "Baja"},
 ]
 
 prioridades = ["Alta", "Media", "Baja"]
@@ -23,7 +23,7 @@ while True:
             print("Tarea agregada con éxito")
         else:
             print("Prioridad no válida")
-        
+
     elif opcion == "2":
         print("Tareas pendientes:")
         for t in tareas:
@@ -40,7 +40,7 @@ while True:
                 break
         if not encontrada:
             print("Tarea no encontrada")
-        
+
     elif opcion == "4":
         tarea = input("Ingrese la tarea a clasificar: ")
         prioridad = input("Ingrese la prioridad (Alta, Media, Baja): ")
@@ -56,11 +56,9 @@ while True:
                 break
         if not encontrada:
             print("Tarea no encontrada")
-        
+
     elif opcion == "5":
-            print("Saliendo...")
-            break
+        print("Saliendo...")
+        break
     else:
         print("Opción no válida")
-    
-      
