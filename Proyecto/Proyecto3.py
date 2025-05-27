@@ -58,7 +58,7 @@ while True:
             print("Tarea no encontrada")
 
     elif opcion == "5":
-        print("Saliendo...")
+        print("Saliendo del programa...")
         break
     else:
         print("Opción no válida")
